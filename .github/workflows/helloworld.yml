@@ -2,9 +2,8 @@ name: hello-word
 on: [push]
 jobs:
   print-hello-world:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
     - run: |
-        chmod u+x helloworld.sh
-        ./helloworld.sh
+        python3 helloworld.py
