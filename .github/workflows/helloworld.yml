@@ -4,5 +4,7 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
-    - run: chmod u+x helloworld.bash
-    - run: ./helloworld.bash
+    - uses: actions/checkout@v3
+    - run: |
+        chmod u+x helloworld.bash
+        ./helloworld.bash
