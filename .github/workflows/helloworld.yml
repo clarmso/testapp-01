@@ -1,0 +1,8 @@
+name: hello-word
+on: [push]
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+    - run: chmod u+x helloworld.bash
+    - run: ./helloworld.bash
