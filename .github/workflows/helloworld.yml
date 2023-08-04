@@ -9,3 +9,9 @@ jobs:
         python3 helloworld.py -m 0
         python3 helloworld.py --message 10
         python3 helloworld.py --message -1
+  yaml-file-fun:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v3
+    - run: |
+        python3 tmp.py
